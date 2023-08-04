@@ -1,5 +1,6 @@
 package fr.campus.recursivite;
 
+import fr.campus.recursivite.PGCD.PGCD;
 import fr.campus.recursivite.factorielle.Factorielle;
 import fr.campus.recursivite.fibonacci.Fibonacci;
 import fr.campus.recursivite.syracuse.Syracuse;
@@ -35,5 +36,9 @@ public class Main {
 
         Syracuse syracuse = new Syracuse();
         System.out.println("Syracuse : " + syracuse.syrac(N, i));
+
+        // PGCD
+        PGCD pgcd = new PGCD();
+        System.out.println("PGCD : " + pgcd.PGCD_recursive(N, i));
     }
 }
